@@ -1,0 +1,99 @@
+/* ===================================================
+   FOODDASH DESIGN TOKENS — Premium Edition
+   =================================================== */
+:root {
+  /* Brand colours */
+  --color-primary: #c43f32;
+  --color-primary-hover: #a93128;
+  --color-primary-light: #f7e5df;
+  --color-on-primary: #ffffff;
+  --color-secondary: #486d50;
+  --color-accent: #b5832f;
+  --color-accent-hover: #936a25;
+  --color-on-accent: #ffffff;
+
+  /* Surfaces */
+  --color-background: #f3f1e8;
+  --color-foreground: #282b25;
+  --color-card: #fffef9;
+  --color-card-hover: #f8f6ed;
+  --color-muted: #eae9df;
+  --color-muted-foreground: #696b60;
+  --color-border: #d9d9ce;
+  --color-border-strong: #aeb2a5;
+
+  /* Feedback */
+  --color-destructive: #b63d32;
+  --color-ring: #c43f32;
+  --color-success: #2e6846;
+  --color-success-bg: #e2eee3;
+  --color-warning-bg: #f3ead4;
+  --color-warning: #795b20;
+  --color-info: #365e68;
+  --color-info-bg: #e0ebea;
+  --color-danger-bg: #f7e5df;
+
+  /* Gradients */
+  --gradient-hero: #c43f32;
+  --gradient-accent: #486d50;
+  --gradient-card: #fffef9;
+  --gradient-shine: none;
+
+  /* Typography */
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-body: 'Karla', system-ui, -apple-system, sans-serif;
+  --font-display: 'Playfair Display', Georgia, serif;
+
+  /* Spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+
+  /* Radii */
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-pill: 999px;
+
+  /* Shadows */
+  --shadow-xs: 0 1px 2px rgba(40, 43, 37, 0.04);
+  --shadow-sm: 0 2px 8px rgba(40, 43, 37, 0.05);
+  --shadow-md: 0 8px 24px rgba(40, 43, 37, 0.08);
+  --shadow-lg: 0 16px 40px rgba(40, 43, 37, 0.12);
+  --shadow-xl: 0 24px 56px rgba(40, 43, 37, 0.16);
+  --shadow-block: 0 2px 8px rgba(40, 43, 37, 0.05);
+  --shadow-primary: 0 5px 14px rgba(196, 63, 50, 0.18);
+  --shadow-accent: 0 5px 14px rgba(72, 109, 80, 0.16);
+  --shadow-glow: 0 0 24px rgba(196, 63, 50, 0.12);
+
+  /* Transitions */
+  --transition: 200ms ease;
+  --transition-slow: 400ms ease;
+  --transition-bounce: 220ms cubic-bezier(0.2, 0.7, 0.3, 1);
+
+  /* Layout */
+  --container: 1240px;
+  --sidebar-width: 252px;
+}
+
+/* ── Dark Mode ── */
+@media (prefers-color-scheme: dark) {
+  :root[data-theme='auto'] {
+    --color-background: #0f0202;
+    --color-foreground: #fef2f2;
+    --color-card: #1e0505;
+    --color-card-hover: #280707;
+    --color-muted: #2c0f0f;
+    --color-muted-foreground: #e2a0a0;
+    --color-border: #4a1c1c;
+    --color-border-strong: #6b2c2c;
+    --gradient-card: linear-gradient(145deg, #1e0505 0%, #280707 100%);
+  }
+}
